@@ -1,0 +1,84 @@
+<Stations>
+
+<Station id="17" name="NPO Radio 5">
+    <MONDAY>0</MONDAY>
+    <TUESDAY>0</TUESDAY>
+    <WEDNESDAY>0</WEDNESDAY>
+    <THURSDAY>0</THURSDAY>
+    <FRIDAY>0</FRIDAY>
+    <SATURDAY>0</SATURDAY>
+    <SUNDAY>0</SUNDAY>
+  </Station>
+<Station id="13" name="NPO Radio 4">
+    <MONDAY>0</MONDAY>
+    <TUESDAY>0</TUESDAY>
+    <WEDNESDAY>0</WEDNESDAY>
+    <THURSDAY>0</THURSDAY>
+    <FRIDAY>0</FRIDAY>
+    <SATURDAY>0</SATURDAY>
+    <SUNDAY>0</SUNDAY>
+  </Station>
+<Station id="286" name="Efteling radio">
+    <SUNDAY>0</SUNDAY>
+    <MONDAY>0</MONDAY>
+    <TUESDAY>0</TUESDAY>
+    <WEDNESDAY>0</WEDNESDAY>
+    <THURSDAY>0</THURSDAY>
+    <FRIDAY>0</FRIDAY>
+    <SATURDAY>0</SATURDAY>
+  </Station>
+  <Station id="3" name="NPO Radio 1">
+    <SUNDAY>0</SUNDAY>
+    <MONDAY>0</MONDAY>
+    <TUESDAY>0</TUESDAY>
+    <WEDNESDAY>0</WEDNESDAY>
+    <THURSDAY>2</THURSDAY>
+    <FRIDAY>0</FRIDAY>
+    <SATURDAY>0</SATURDAY>
+  </Station>
+  <Station id="5" name="NPO Radio 2">
+    <SUNDAY>0</SUNDAY>
+    <MONDAY>0</MONDAY>
+    <TUESDAY>0</TUESDAY>
+    <WEDNESDAY>0</WEDNESDAY>
+    <THURSDAY>2</THURSDAY>
+    <FRIDAY>0</FRIDAY>
+    <SATURDAY>0</SATURDAY>
+  </Station>
+  <Station id="9" name="NPO 3FM">
+    <SUNDAY>0</SUNDAY>
+    <MONDAY>0</MONDAY>
+    <TUESDAY>0</TUESDAY>
+    <WEDNESDAY>0</WEDNESDAY>
+    <THURSDAY>0</THURSDAY>
+    <FRIDAY>0</FRIDAY>
+    <SATURDAY>0</SATURDAY>
+  </Station>
+  <Station id="19" name="NPO Radio 6">
+    <SUNDAY>0</SUNDAY>
+    <MONDAY>0</MONDAY>
+    <TUESDAY>0</TUESDAY>
+    <WEDNESDAY>0</WEDNESDAY>
+    <THURSDAY>0</THURSDAY>
+    <FRIDAY>0</FRIDAY>
+    <SATURDAY>0</SATURDAY>
+  </Station>
+  <Station id="169" name="Q-music">
+    <SUNDAY>0</SUNDAY>
+    <MONDAY>0</MONDAY>
+    <TUESDAY>0</TUESDAY>
+    <WEDNESDAY>0</WEDNESDAY>
+    <THURSDAY>0</THURSDAY>
+    <FRIDAY>0</FRIDAY>
+    <SATURDAY>0</SATURDAY>
+  </Station>
+  <Station id="190" name="Radio 538">
+    <SUNDAY>0</SUNDAY>
+    <MONDAY>0</MONDAY>
+    <TUESDAY>0</TUESDAY>
+    <WEDNESDAY>0</WEDNESDAY>
+    <THURSDAY>0</THURSDAY>
+    <FRIDAY>0</FRIDAY>
+    <SATURDAY>0</SATURDAY>
+  </Station>
+</Stations>

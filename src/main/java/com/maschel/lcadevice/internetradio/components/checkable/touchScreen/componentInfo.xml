@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><component>
+    <name>Aanraak scherm</name>
+    <status></status>
+    <installDate></installDate>
+    <mileage>0</mileage>
+    <replacementSteps>
+        <step>
+            <title>Schroef voorkant los</title>
+            <description>Schroef het voorpaneel van de radio los en neem het paneel weg.</description>
+            <attachments>
+            </attachments>
+        </step>
+        <step>
+            <title>Neem het aanraak scherm uit het voorpaneel</title>
+            <description>Koppel de kabels los van het aanraak scherm en schroef de schroeven uit het bord. Neem daarna het scherm uit het voorpaneel.</description>
+            <attachments>
+            </attachments>
+        </step>
+        <step>
+            <title>Plaats nieuw aanraakscherm in het voorpaneel.</title>
+            <description>Plaats een nieuw aanraakscherm in het voorpaneel en schroef de schroeven terug. Koppel vervolgens de kabels weer aan het nieuwe aanraak scherm.</description>
+            <attachments>
+                <attachment>
+                    <name>Link naar product</name>
+                    <fileName>touchscreen.url</fileName>
+                </attachment>
+            </attachments>
+        </step>
+        <step>
+            <title>Plaats het voorpaneel terug.</title>
+            <description>Plaats het voorpaneel terug en schroef de schroeven op hun plaats.</description>
+            <attachments>
+            </attachments>
+        </step>
+    </replacementSteps>
+    <logs>
+    </logs>
+</component>
