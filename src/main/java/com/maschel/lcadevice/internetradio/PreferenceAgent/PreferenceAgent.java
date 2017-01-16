@@ -1,6 +1,6 @@
 package com.maschel.lcadevice.internetradio.PreferenceAgent;
 
-import com.maschel.lca.agent.DeviceAgent;
+import com.maschel.lca.lcadevice.agent.DeviceAgent;
 import com.maschel.lcadevice.internetradio.DeviceAgent.InternetRadioDevice;
 import com.maschel.lcadevice.internetradio.RadioPlayer.MainMenu;
 import com.maschel.lcadevice.internetradio.RadioPlayer.MusicController;

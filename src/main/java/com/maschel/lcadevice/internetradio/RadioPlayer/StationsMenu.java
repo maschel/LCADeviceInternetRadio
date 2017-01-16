@@ -35,7 +35,7 @@ public class StationsMenu extends JFrame implements ActionListener, MouseListene
 	private JButton playButton;
 	private RadioStation selectedRadiostation = null;
 	private MainMenu mainMenu;
-	private RadiostationWebservice radioStationWebservice;
+	public static RadiostationWebservice radioStationWebservice = new RadiostationWebservice();;
 
 	/**
 	 * The constructor of RadioPlayer.StationsMenu.
@@ -47,9 +47,7 @@ public class StationsMenu extends JFrame implements ActionListener, MouseListene
 	public StationsMenu(MainMenu mainMenu) {
 		UI ui = UI_Handler.readLayout("StationsMenu");
 		this.mainMenu = mainMenu;
-		radioStationWebservice = new RadiostationWebservice();
 
-		
 		getContentPane().setBackground(new Color(192, 192, 192));
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);

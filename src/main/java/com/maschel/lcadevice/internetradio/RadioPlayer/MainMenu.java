@@ -34,7 +34,7 @@ public class MainMenu extends JFrame implements ActionListener,ChangeListener, D
 	private static final long serialVersionUID = 1L;
 	
 	//private RadioPlayer.PreferenceAgent PrefAgent;
-	private DeviceHandler handler;
+	public DeviceHandler handler;
 	private RadioStation currentRadioStation;
 	private JSlider volumeSlider;
 	private JLabel volumeLabel;

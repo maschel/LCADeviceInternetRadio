@@ -35,16 +35,21 @@
 
 package com.maschel.lcadevice.internetradio.DeviceAgent;
 
-import com.maschel.lca.device.Component;
-import com.maschel.lca.device.sensor.Sensor;
+import com.maschel.lca.lcadevice.device.Component;
+import com.maschel.lca.lcadevice.device.actuator.Actuator;
+import com.maschel.lca.lcadevice.device.sensor.Sensor;
 import com.maschel.lcadevice.internetradio.RadioPlayer.MainMenu;
 import com.maschel.lcadevice.internetradio.RadioPlayer.MusicController;
+import com.maschel.lcadevice.internetradio.RadioPlayer.RadioStation;
+import com.maschel.lcadevice.internetradio.RadioPlayer.StationsMenu;
 import com.sun.javaws.Main;
+
+import java.util.ArrayList;
 
 /**
  * Created by feiko on 11/24/2016.
  */
-public class InternetRadioDevice extends com.maschel.lca.device.Device implements MainMenu.OnVolumeChangedListener{
+public class InternetRadioDevice extends com.maschel.lca.lcadevice.device.Device implements MainMenu.OnVolumeChangedListener{
 
     private final static String DEVICE_ID = "InternetRadio";
     private final static long ANALYTICS_SYNC_MIN = 10000; // 10 seconds
@@ -138,12 +143,50 @@ public class InternetRadioDevice extends com.maschel.lca.device.Device implement
             }
         });
 
-        internetRadioComponent.add(new Sensor("volume") {
+        internetRadioComponent.add(new Sensor("volumeSensor") {
             @Override
             public Integer readSensor() {
                 MainMenu.staticMain.removeOnVolumeChangedListener(internetRadio);
                 MainMenu.staticMain.setOnVolumeChangedListener(internetRadio);
                 return currentVolume;
+            }
+        });
+
+        internetRadioComponent.add(new Sensor("radioList") {
+            @Override
+            public String readSensor() {
+                ArrayList<RadioStation> radioStations = StationsMenu.radioStationWebservice.getRadiostations();
+
+                String stationsString = "";
+                for(RadioStation rs: radioStations)
+                {
+                    stationsString += rs.getName() + ";";
+                }
+                return stationsString;
+            }
+        });
+
+        this.addDeviceActuator(new Actuator<RadioStationArgument>("playStation"){
+
+            @Override
+            public void actuate(RadioStationArgument radioStation) {
+                System.out.println("Trying to play station:" + radioStation);
+                ArrayList<RadioStation> radioStations = StationsMenu.radioStationWebservice.getRadiostations();
+                for(RadioStation rs: radioStations)
+                {
+                    if(rs.getName().equals(radioStation.getName()))
+                    {
+                        MainMenu.staticMain.setRadioStation(rs);
+                    }
+                }
+            }
+        });
+
+        this.addDeviceActuator(new Actuator<Double>("volumeActuator") {
+            @Override
+            public void actuate(Double volume) {
+                System.out.println("doei");
+                MainMenu.staticMain.handler.setVolume(volume.intValue());
             }
         });
     }

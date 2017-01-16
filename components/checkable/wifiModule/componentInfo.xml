@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><component>
+    <name>WiFi module</name>
+    <status>Ok</status>
+    <installDate>2016-11-22 11:56:30</installDate>
+    <mileage>3191</mileage>
+    <replacementSteps>
+        <step>
+            <title>Schroef achterkant los</title>
+            <description>Schroef het achterpaneel van de radio los en neem het paneel weg.</description>
+            <attachments>
+            </attachments>
+        </step>
+        <step>
+            <title>Neem de WiFi module uit de radio</title>
+            <description>Koppel de USB WiFi module los van het main board.</description>
+            <attachments>
+            </attachments>
+        </step>
+        <step>
+            <title>Plaats nieuwe WiFi module in de radio.</title>
+            <description>Plaats een nieuwe USB WiFi module in één van de USB aansluitingen van het main board.</description>
+            <attachments>
+                <attachment>
+                    <name>Link naar product</name>
+                    <fileName>wifimodule.url</fileName>
+                </attachment>
+            </attachments>
+        </step>
+        <step>
+            <title>Plaats het achterpaneel terug.</title>
+            <description>Plaats het achterpaneel terug en schroef de schroeven op hun plaats.</description>
+            <attachments>
+            </attachments>
+        </step>
+    </replacementSteps>
+    <logs>
+        <log><timestamp>2016-11-22 11:56:30</timestamp><message>Installment date has been stored.</message></log>
+        <log><timestamp>2016-11-22 11:56:40</timestamp><message>The component status has been changed to Ok</message></log>
+        <log><timestamp>2016-11-22 11:59:49</timestamp><message>48 seconds has been added to mileage.</message></log>
+        <log><timestamp>2016-11-22 12:03:59</timestamp><message>10 seconds has been added to mileage.</message></log>
+        <log><timestamp>2016-11-22 12:06:32</timestamp><message>140 seconds has been added to mileage.</message></log>
+        <log><timestamp>2016-11-22 12:45:26</timestamp><message>2329 seconds has been added to mileage.</message></log>
+        <log><timestamp>2016-11-22 12:53:57</timestamp><message>505 seconds has been added to mileage.</message></log>
+        <log><timestamp>2016-11-22 13:10:07</timestamp><message>154 seconds has been added to mileage.</message></log>
+        <log><timestamp>2016-11-24 12:36:33</timestamp><message>5 seconds has been added to mileage.</message></log>
+    </logs>
+</component>

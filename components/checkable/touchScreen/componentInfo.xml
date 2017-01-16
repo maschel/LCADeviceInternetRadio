@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><component>
+    <name>Aanraak scherm</name>
+    <status>Ok</status>
+    <installDate>2016-11-22 11:56:30</installDate>
+    <mileage>3191</mileage>
+    <replacementSteps>
+        <step>
+            <title>Schroef voorkant los</title>
+            <description>Schroef het voorpaneel van de radio los en neem het paneel weg.</description>
+            <attachments>
+            </attachments>
+        </step>
+        <step>
+            <title>Neem het aanraak scherm uit het voorpaneel</title>
+            <description>Koppel de kabels los van het aanraak scherm en schroef de schroeven uit het bord. Neem daarna het scherm uit het voorpaneel.</description>
+            <attachments>
+            </attachments>
+        </step>
+        <step>
+            <title>Plaats nieuw aanraakscherm in het voorpaneel.</title>
+            <description>Plaats een nieuw aanraakscherm in het voorpaneel en schroef de schroeven terug. Koppel vervolgens de kabels weer aan het nieuwe aanraak scherm.</description>
+            <attachments>
+                <attachment>
+                    <name>Link naar product</name>
+                    <fileName>touchscreen.url</fileName>
+                </attachment>
+            </attachments>
+        </step>
+        <step>
+            <title>Plaats het voorpaneel terug.</title>
+            <description>Plaats het voorpaneel terug en schroef de schroeven op hun plaats.</description>
+            <attachments>
+            </attachments>
+        </step>
+    </replacementSteps>
+    <logs>
+        <log><timestamp>2016-11-22 11:56:30</timestamp><message>Installment date has been stored.</message></log>
+        <log><timestamp>2016-11-22 11:56:40</timestamp><message>The component status has been changed to Ok</message></log>
+        <log><timestamp>2016-11-22 11:59:49</timestamp><message>48 seconds has been added to mileage.</message></log>
+        <log><timestamp>2016-11-22 12:03:59</timestamp><message>10 seconds has been added to mileage.</message></log>
+        <log><timestamp>2016-11-22 12:06:32</timestamp><message>140 seconds has been added to mileage.</message></log>
+        <log><timestamp>2016-11-22 12:45:26</timestamp><message>2329 seconds has been added to mileage.</message></log>
+        <log><timestamp>2016-11-22 12:53:57</timestamp><message>505 seconds has been added to mileage.</message></log>
+        <log><timestamp>2016-11-22 13:10:07</timestamp><message>154 seconds has been added to mileage.</message></log>
+        <log><timestamp>2016-11-24 12:36:33</timestamp><message>5 seconds has been added to mileage.</message></log>
+    </logs>
+</component>
