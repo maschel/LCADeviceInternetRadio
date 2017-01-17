@@ -7,6 +7,25 @@
     <version>1.0-SNAPSHOT</version>
     <build>
         <plugins>
+
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>appassembler-maven-plugin</artifactId>
+                <version>2.0.0</version>
+                <configuration>
+                    <programs>
+                        <program>
+                            <mainClass>jade.Boot</mainClass>
+                            <id>LCADeviceInternetRadio</id>
+                            <commandLineArguments>
+                                <commandLineArgument>-gui</commandLineArgument>
+                                <commandLineArgument>-agents "preferenceagent:com.maschel.lcadevice.internetradio.PreferenceAgent.PreferenceAgent();productagent:com.maschel.lcadevice.internetradio.ProductAgent.ProductAgent();deviceagent:com.maschel.lca.lcadevice.agent.DeviceAgent(com.maschel.lcadevice.internetradio.DeviceAgent.InternetRadioDevice);"</commandLineArgument>
+                                <commandLineArgument>-port 12490</commandLineArgument>
+                            </commandLineArguments>
+                        </program>
+                    </programs>
+                </configuration>
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -47,11 +66,7 @@
             <version>3.0.0.0</version>
         </dependency>
 
-        <dependency>
-            <groupId>io.silverspoon</groupId>
-            <artifactId>bulldog-linux-native-beagleboneblack-hardfp</artifactId>
-            <version>0.1.0</version>
-        </dependency>
+
 
         <dependency>
             <groupId>commons-logging</groupId>
