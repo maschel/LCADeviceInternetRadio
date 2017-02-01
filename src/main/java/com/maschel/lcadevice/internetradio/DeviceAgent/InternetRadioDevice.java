@@ -51,7 +51,7 @@ import java.util.ArrayList;
  */
 public class InternetRadioDevice extends com.maschel.lca.lcadevice.device.Device implements MainMenu.OnVolumeChangedListener{
 
-    private final static String DEVICE_ID = "InternetRadio";
+    private final static String DEVICE_ID = "InternetRadio1";
     private final static long ANALYTICS_SYNC_MIN = 10000; // 10 seconds
     private final static long SENSOR_UPDATE_INTERVAL = 0;
 
@@ -81,7 +81,7 @@ public class InternetRadioDevice extends com.maschel.lca.lcadevice.device.Device
         Component internetRadioComponent = new Component("internetradio");
         addComponent(internetRadioComponent);
 
-        internetRadioComponent.add(new Sensor("stationName") {
+        internetRadioComponent.add(new Sensor("stationName", SENSOR_UPDATE_INTERVAL) {
             @Override
             public String readSensor() {
                 String result;
@@ -95,7 +95,7 @@ public class InternetRadioDevice extends com.maschel.lca.lcadevice.device.Device
             }
         });
 
-        internetRadioComponent.add(new Sensor("stationGenre") {
+        internetRadioComponent.add(new Sensor("stationGenre", SENSOR_UPDATE_INTERVAL) {
             @Override
             public String readSensor() {
                 String result;
@@ -109,7 +109,7 @@ public class InternetRadioDevice extends com.maschel.lca.lcadevice.device.Device
             }
         });
 
-        internetRadioComponent.add(new Sensor("stationCountry") {
+        internetRadioComponent.add(new Sensor("stationCountry", SENSOR_UPDATE_INTERVAL) {
             @Override
             public String readSensor() {
                 String result;
@@ -123,14 +123,14 @@ public class InternetRadioDevice extends com.maschel.lca.lcadevice.device.Device
             }
         });
 
-        internetRadioComponent.add(new Sensor("testSensor") {
+        internetRadioComponent.add(new Sensor("testSensor", SENSOR_UPDATE_INTERVAL) {
             @Override
             public String readSensor() {
                 return "test";
             }
         });
 
-        internetRadioComponent.add(new Sensor("playState") {
+        internetRadioComponent.add(new Sensor("playState", SENSOR_UPDATE_INTERVAL) {
             @Override
             public String readSensor() {
                 switch(MainMenu.staticMain.myMusicController.getPlayState())
@@ -143,7 +143,7 @@ public class InternetRadioDevice extends com.maschel.lca.lcadevice.device.Device
             }
         });
 
-        internetRadioComponent.add(new Sensor("volumeSensor") {
+        internetRadioComponent.add(new Sensor("volumeSensor", SENSOR_UPDATE_INTERVAL) {
             @Override
             public Integer readSensor() {
                 MainMenu.staticMain.removeOnVolumeChangedListener(internetRadio);
@@ -152,7 +152,7 @@ public class InternetRadioDevice extends com.maschel.lca.lcadevice.device.Device
             }
         });
 
-        internetRadioComponent.add(new Sensor("radioList") {
+        internetRadioComponent.add(new Sensor("radioList", SENSOR_UPDATE_INTERVAL) {
             @Override
             public String readSensor() {
                 ArrayList<RadioStation> radioStations = StationsMenu.radioStationWebservice.getRadiostations();

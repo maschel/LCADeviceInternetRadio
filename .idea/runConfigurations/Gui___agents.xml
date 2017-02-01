@@ -3,7 +3,7 @@
     <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
     <option name="MAIN_CLASS_NAME" value="jade.Boot" />
     <option name="VM_PARAMETERS" value="" />
-    <option name="PROGRAM_PARAMETERS" value="-gui -agents &quot;preferenceagent:com.maschel.lcadevice.internetradio.PreferenceAgent.PreferenceAgent();productagent:com.maschel.lcadevice.internetradio.ProductAgent.ProductAgent();deviceagent:com.maschel.lca.lcadevice.agent.DeviceAgent(com.maschel.lcadevice.internetradio.DeviceAgent.InternetRadioDevice);&quot; -port 12490" />
+    <option name="PROGRAM_PARAMETERS" value="-gui -agents &quot;preferenceagent:com.maschel.lcadevice.internetradio.PreferenceAgent.PreferenceAgent();productagent:com.maschel.lcadevice.internetradio.ProductAgent.ProductAgent();deviceagent:com.maschel.lca.lcadevice.agent.DeviceAgent(com.maschel.lcadevice.internetradio.DeviceAgent.InternetRadioDevice);&quot; -mtps jade.mtp.http.MessageTransportProtocol(http://192.168.1.145:7778) -platform-id &quot;InternetRadioPlatform&quot;" />
     <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
     <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
     <option name="ALTERNATIVE_JRE_PATH" />

@@ -20,7 +20,9 @@
                             <commandLineArguments>
                                 <commandLineArgument>-gui</commandLineArgument>
                                 <commandLineArgument>-agents "preferenceagent:com.maschel.lcadevice.internetradio.PreferenceAgent.PreferenceAgent();productagent:com.maschel.lcadevice.internetradio.ProductAgent.ProductAgent();deviceagent:com.maschel.lca.lcadevice.agent.DeviceAgent(com.maschel.lcadevice.internetradio.DeviceAgent.InternetRadioDevice);"</commandLineArgument>
-                                <commandLineArgument>-port 12490</commandLineArgument>
+                                <commandLineArgument>-mtps "jade.mtp.http.MessageTransportProtocol(http://192.168.1.127:7778)"</commandLineArgument>
+                                <commandLineArgument>-platform-id "InternetRadioPlatform"</commandLineArgument>
+
                             </commandLineArguments>
                         </program>
                     </programs>
@@ -41,6 +43,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.6.0</version>
                 <configuration>
                     <source>1.7</source>
                     <target>1.7</target>
@@ -65,7 +68,7 @@
         <dependency>
             <groupId>com.maschel</groupId>
             <artifactId>lcadevice</artifactId>
-            <version>0.4.1-SNAPSHOT</version>
+            <version>0.4.3-SNAPSHOT</version>
         </dependency>
 
         <dependency>
